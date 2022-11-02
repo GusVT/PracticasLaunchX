@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Elys</title>
+</head>
+
+<body>
+    <h2>Pedidos</h2>
+    <br>
+    <form action="/accion.js" id="PedidoPastel" method="post">
+        <section>
+            <label for="NombrePedido"> Nombre</label>
+            <input type="text" id="NombrePedido" name="NombrePedido"><br><br>
+            <label for="DireccionPedido"> Direccion</label>
+            <input type="text" id="DireccionPedido" name="DireccionPedido"><br><br>
+            <label for="TelefonoPedido"> Telefono</label>
+            <input type="tel" id="TelefonoPedido" name="TelefonoPedido"><br><br>
+            <label for="CorreoPedido"> Correo Electronico</label>
+            <input type="email" id="CorreoPedido" name="CorreoPedido"><br><br>
+            <label for="DescripcionPedido">Decripcion del pedido</label>
+            <input type="text" id="DescripcionPedido" name="DescripcionPedido"><br><br>
+        </section>
+        <section class="classPasteles">
+            <h3>Sabores</h3>
+            <input type="checkbox" id="Pastel1" name="Pastel1" value="3leches">
+            <label for="Pastel1">Pastel de 3 leches</label><br>
+            <input type="checkbox" id="Pastel2" name="Pastel2" value="Arcoiris">
+            <label for="Pastel2">Pastel arcoiris</label><br>
+            <input type="checkbox" id="Pastel3" name="Pastel3" value="Seco">
+            <label for="Pastel3">Pastel Seco</label><br><br>
+        </section>
+        <section class="classFrutas">
+            <h3>Decoraciones</h3>
+            <input type="checkbox" id="Frutas1" name="Frutas1" value="Fresas">
+            <label for="Frutas1">Fresas</label><br>
+            <input type="checkbox" id="Frutas2" name="Frutas2" value="Mango">
+            <label for="Frutas2">Mango</label><br>
+            <input type="checkbox" id="Frutas3" name="Frutas3" value="Frutossecos">
+            <label for="Frutas3">Frutos Secos</label><br>
+            <input type="checkbox" id="Frutas4" name="Frutas4" value="Kiwi">
+            <label for="Frutas4">Kiwi</label><br><br>
+            <input type="checkbox" id="Lunetas" name="Lunetas" value="Lunetas">
+            <label for="Lunetas">Lunetas</label><br><br>
+            <input type="checkbox" id="Tradicional" name="Tradicional" value="Tradicional">
+            <label for="Tradicional">Tradicional</label><br><br>
+            <input type="checkbox" id="Foto" name="Foto" value="Foto">
+            <label for="Foto">Imagen personalizada</label><br>
+            <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+        </section>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
